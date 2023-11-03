@@ -1,4 +1,4 @@
-Anime Website with Next.js and Jikan API
+# Anime Website with Next.js and Jikan API
 
 ## Getting Started
 
