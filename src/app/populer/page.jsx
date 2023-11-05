@@ -4,7 +4,7 @@ import AnimeList from "@/components/AnimeList"
 import HeaderBanner from "@/components/utilities/HeaderBanner"
 import PaginationPage from "@/components/utilities/PaginationPage"
 import { useEffect, useState } from "react"
-import { getAnimeResponse } from "../libs/api-libs"
+import { getAnimeResponse } from "../../libs/api-libs"
 
 const Page = () => {
     const [page, setPage] = useState(1)
