@@ -9,7 +9,7 @@
 }
 
 img {
-    width: 100%;
+    width: auto;
     height: auto;
     min-height: 350px;
     transition: .3s ease all;
