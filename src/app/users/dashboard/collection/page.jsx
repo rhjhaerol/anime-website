@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <section className="max-w-2xl mx-auto mt-4">
+    <section className="px-4 mt-4">
       <Header title={'My Collection'}/>
       <div className="px-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4 mt-4">
         <Link href={""} className="relative border-2 border-color-accent">
