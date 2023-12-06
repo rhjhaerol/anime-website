@@ -10,7 +10,7 @@ const ActionButton = async() => {
     return (
         <div className="pt-2">
             {
-                user ? <Link href="/users/dashboard" className="py-1 px-4">Dashboard</Link> : null
+                user ? <Link href="/users/dashboard" className="py-1 mr-4">Dashboard</Link> : null
             }
             <Link href={actionURL} className="bg-color-dark text-color-accent py-1 px-12 inline-block rounded">{actionLabel}</Link>
         </div>
