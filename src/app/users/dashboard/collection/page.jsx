@@ -9,8 +9,7 @@ const Page = async () => {
     const collection = await prisma.collection.findMany({
         where: { user_email: user?.email },
     });
-    console.log(collection);
-
+    
     return (
         <section className="px-4 mt-4">
             <Header title={"My Collection"} />
@@ -18,12 +17,12 @@ const Page = async () => {
                 {collection.map((collect, index) => {
                     return (
                         <Link
-                        key={index}
+                            key={index}
                             href={`/anime/${collect.anime_mal_id}`}
-                            className="relative border-2 border-color-accent"
+                            className="relative"
                         >
                             <Image
-                                src={""}
+                                src={collect.anime_image}
                                 alt="..."
                                 width={350}
                                 height={350}
@@ -31,7 +30,7 @@ const Page = async () => {
                             />
                             <div className="absolute flex items-center justify-center bottom-0 bg-color-accent w-full h-16">
                                 <h2 className="text-lg font-semibold">
-                                    {collect.anime_mal_id}
+                                    {collect.anime_title}
                                 </h2>
                             </div>
                         </Link>
